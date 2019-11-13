@@ -3,6 +3,10 @@ module.exports = {
   env: {
     browser: true
   },
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: '@typescript-eslint/parser'
+  },
   extends: [
     'plugin:vue/recommended',
     'plugin:@typescript-eslint/recommended',
@@ -15,6 +19,18 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     quotes: ['warn', 'single'],
     'vue/singleline-html-element-content-newline': 0,
+    'vue/html-self-closing': [
+      2,
+      {
+        html: {
+          void: 'never',
+          normal: 'always',
+          component: 'always'
+        },
+        svg: 'always',
+        math: 'always'
+      }
+    ],
     '@typescript-eslint/explicit-function-return-type': [
       1,
       {
@@ -28,10 +44,6 @@ module.exports = {
         allowSingleExtends: true
       }
     ]
-  },
-  parser: 'vue-eslint-parser',
-  parserOptions: {
-    parser: '@typescript-eslint/parser'
   },
   overrides: [
     {
