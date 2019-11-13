@@ -1,9 +1,9 @@
-import Vue from "vue";
+import Vue from 'vue';
 
-import "./styles/quasar.styl";
-import "quasar/dist/quasar.ie.polyfills";
-import lang from "quasar/lang/ja.js";
-import "@quasar/extras/material-icons/material-icons.css";
+import './styles/quasar.styl';
+import 'quasar/dist/quasar.ie.polyfills';
+import lang from 'quasar/lang/ja.js';
+import '@quasar/extras/material-icons/material-icons.css';
 import {
   Quasar,
   QLayout,
@@ -19,7 +19,7 @@ import {
   QItem,
   QItemSection,
   QItemLabel
-} from "quasar";
+} from 'quasar';
 
 Vue.use(Quasar, {
   config: {},
