@@ -4,6 +4,8 @@ import router from './router';
 import store from './store';
 import './quasar';
 
+import '@/styles/_normalize.scss'
+
 Vue.config.productionTip = false;
 
 new Vue({
