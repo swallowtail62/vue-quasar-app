@@ -21,7 +21,8 @@ import {
   QItemLabel,
   QForm,
   QInput,
-  QSpace
+  QSpace,
+  QChip
 } from 'quasar';
 
 Vue.use(Quasar, {
@@ -42,7 +43,8 @@ Vue.use(Quasar, {
     QItemLabel,
     QForm,
     QInput,
-    QSpace
+    QSpace,
+    QChip
   },
   directives: {},
   plugins: {},

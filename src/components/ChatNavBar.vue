@@ -3,7 +3,7 @@
     <q-btn flat dense round icon="menu" />
     <q-space />
     <span>{{ user.name }} | </span>
-    <q-btn flat label="Logout" />
+    <q-btn class="btn-logout" flat label="Logout" />
   </q-toolbar>
 </template>
 
@@ -20,3 +20,9 @@ export default class ChatNavBar extends Vue{
   
 }
 </script>
+
+<style lang="scss" scoped>
+.btn-logout {
+  padding: 4px 8px;
+}
+</style>
