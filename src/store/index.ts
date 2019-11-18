@@ -39,17 +39,17 @@ export default new Vuex.Store({
     messages: [
       {
         username: 'Jack',
-        date: '11/12/1644',
+        date: '11/12/2019',
         text: 'Not all treasure is silver and gold mate'
       },
       {
         username: 'Jack',
-        date: '12/12/1644',
+        date: '12/12/2019',
         text: 'If you were waiting for the opportune moment, that was it'
       },
       {
         username: 'Hector',
-        date: '12/12/1644',
+        date: '12/12/2019',
         text: 'You know Jack, I thought I had you figured out'
       }],
     userTyping: null

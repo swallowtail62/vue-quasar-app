@@ -1,5 +1,4 @@
 import Vue from 'vue';
-// TODO: resolve compile ERROR
 import VueChatScroll from 'vue-chat-scroll';
 
 import App from './App.vue';
