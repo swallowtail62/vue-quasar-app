@@ -28,11 +28,6 @@ export default class UserList extends Vue {
 </script>
 
 <style lang="scss" scoped>
-// #user-list /deep/ {
-//   .q-list {
-//     text-align: left;
-//   }
-// }
 .q-list {
   text-align: left;
 }
