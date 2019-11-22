@@ -23,7 +23,7 @@ import User from '@/model/interface';
 
 @Component({
   name: 'message-list',
-  computed: { ...mapState(['messages', 'user']) }
+  computed: { ...mapState('chatModule', ['messages', 'user']) }
 })
 export default class MessageList extends Vue {
   private user!: User;

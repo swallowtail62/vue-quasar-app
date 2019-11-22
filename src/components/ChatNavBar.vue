@@ -14,7 +14,7 @@ import { mapState } from 'vuex';
 
 @Component({
   name: 'chat-nav-bar',
-  computed: { ...mapState(['user'])}
+  computed: { ...mapState('chatModule', ['user'])}
 })
 export default class ChatNavBar extends Vue{
   

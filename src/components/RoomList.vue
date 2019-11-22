@@ -16,7 +16,7 @@ import { mapState } from 'vuex';
 
 @Component({
   name: 'room-list',
-  computed: { ...mapState(['rooms', 'activeRoom']) }
+  computed: { ...mapState('chatModule', ['rooms', 'activeRoom']) }
 })
 export default class RoomList extends Vue {
   private mockItems = [{name: 'hoge'}, {name: 'fuga'}, {name: 'bel'}]

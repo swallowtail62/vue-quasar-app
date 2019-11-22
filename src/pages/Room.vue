@@ -13,7 +13,7 @@ import Component from 'vue-class-component';
 import { mapState } from 'vuex';
 
 @Component({
-  computed: mapState(['loading', 'error'])
+  computed: mapState('chatModule', ['loading', 'error'])
 })
 export default class Room extends Vue {
   // private get hoge

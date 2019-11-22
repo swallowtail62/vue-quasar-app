@@ -20,7 +20,7 @@ import { mapState } from 'vuex';
 
 @Component({
   name: 'user-list',
-  computed: { ...mapState(['users']) }
+  computed: { ...mapState('chatModule', ['users']) }
 })
 export default class UserList extends Vue {
   
