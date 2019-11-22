@@ -22,6 +22,7 @@
   "devDependencies": {
     "@pusher/chatkit-client": "^1.13.2",
     "@types/jest": "^24.0.11",
+    "@types/underscore.string": "0.0.38",
     "@vue/cli-plugin-babel": "^4.0.0",
     "@vue/cli-plugin-eslint": "^4.0.0",
     "@vue/cli-plugin-router": "^4.0.0",
@@ -47,6 +48,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "typescript": "^3.7.2",
+    "underscore.string": "^3.3.5",
     "vue-cli-plugin-quasar": "^1.0.0",
     "vue-template-compiler": "^2.6.10"
   }

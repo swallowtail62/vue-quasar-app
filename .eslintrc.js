@@ -15,7 +15,10 @@ module.exports = {
   ],
   rules: {
     // 0 = off, 1 = warn, 2 = error
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-console':
+      process.env.NODE_ENV === 'production'
+        ? ['error', { allow: ['warn', 'error'] }]
+        : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     quotes: ['warn', 'single'],
     'vue/singleline-html-element-content-newline': 0,
