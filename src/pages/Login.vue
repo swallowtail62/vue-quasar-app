@@ -1,6 +1,6 @@
 <template>
   <div id="login">
-    <div class="login-info">
+    <div class="app-info">
       <h3>Vue.ts with quasr Chat App</h3>
       <div>Powered by Chatkit SDK and quasar framework.</div>
       <div>More info about each framework/library</div>
@@ -10,8 +10,10 @@
         <q-btn type="a" href="https://pusher.com/chatkit" color="purple" label="Chat kit" />
       </div>
     </div>
-    <h4>Chat Login</h4>
-    <login-form />
+    <div class="login-area">
+      <h4>Chat Login</h4>
+      <login-form />
+    </div>
   </div>
 </template>
 
@@ -24,13 +26,11 @@ import LoginForm from '@/components/LoginForm.vue'
   name: 'login',
   components: { LoginForm }
 })
-export default class Login extends Vue{
-
-}
+export default class Login extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-.login-info {
+.app-info {
   padding: 40px;
   background-color: $color-theme-key;
 }
@@ -40,5 +40,15 @@ export default class Login extends Vue{
   .q-btn {
     margin: 0 8px;
   }
+}
+
+.login-area {
+  max-width: 480px;
+  width: 100%;
+  display: inline-block;
+}
+
+.login-form {
+  margin-top: 20px;
 }
 </style>

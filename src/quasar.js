@@ -23,7 +23,8 @@ import {
   QInput,
   QSpace,
   QChip,
-  QChatMessage
+  QChatMessage,
+  QBanner
 } from 'quasar';
 
 Vue.use(Quasar, {
@@ -46,7 +47,8 @@ Vue.use(Quasar, {
     QInput,
     QSpace,
     QChip,
-    QChatMessage
+    QChatMessage,
+    QBanner
   },
   directives: {},
   plugins: {},
